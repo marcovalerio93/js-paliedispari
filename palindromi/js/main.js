@@ -22,7 +22,7 @@ if (word == drow) {
 
 function palindrome(reverse) { 
     let drow = '';
-    for ( let i = reverse.lenght - 1; i >= 0 ; i-- ) {
+    for ( let i = reverse.length - 1; i >= 0 ; i-- ) {
         drow += reverse[i];
 
     }
