@@ -7,20 +7,25 @@
 
 let word = prompt('inserisci parola');
 
-let drow = palindrome (word);
+word = word.replaceAll(' ', '')
 
-console.log (word,drow);
+let drow = palindrome(word);
+
+console.log (word, drow);
 
 if (word == drow) {
-    alert('palindroma');
+    alert('palindroma');  
 } else{
     alert('non palindroma');
 }
 
-function palindrome (word){
-    let my_word;
-    for ( let i = word -1 ; i >= 0 ; i --) {
-        my_word += word[i];
+
+function palindrome(reverse) { 
+    let drow = '';
+    for ( let i = reverse.lenght - 1; i >= 0 ; i-- ) {
+        drow += reverse[i];
+
     }
-    return my_word
+
+    return drow;
 }
